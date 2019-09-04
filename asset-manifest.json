@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mulitple-reducers/static/css/main.cf91971e.chunk.css",
+    "main.js": "/mulitple-reducers/static/js/main.fb24ac8d.chunk.js",
+    "main.js.map": "/mulitple-reducers/static/js/main.fb24ac8d.chunk.js.map",
+    "runtime~main.js": "/mulitple-reducers/static/js/runtime~main.001d4e56.js",
+    "runtime~main.js.map": "/mulitple-reducers/static/js/runtime~main.001d4e56.js.map",
+    "static/js/2.68830b8a.chunk.js": "/mulitple-reducers/static/js/2.68830b8a.chunk.js",
+    "static/js/2.68830b8a.chunk.js.map": "/mulitple-reducers/static/js/2.68830b8a.chunk.js.map",
+    "index.html": "/mulitple-reducers/index.html",
+    "precache-manifest.a498d5a11208a007fa03ac77dd2ffa7d.js": "/mulitple-reducers/precache-manifest.a498d5a11208a007fa03ac77dd2ffa7d.js",
+    "service-worker.js": "/mulitple-reducers/service-worker.js",
+    "static/css/main.cf91971e.chunk.css.map": "/mulitple-reducers/static/css/main.cf91971e.chunk.css.map"
+  }
+}
