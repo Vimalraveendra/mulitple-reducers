@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React,{ Component} from 'react';
+import './App.css';
+import { connect } from 'react-redux'
+
+class App extends Component {
+  render(){
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Multiple-Reducer
       </header>
+      <h1>Click the button! it will add the value of A and B</h1>
+      <div className="col">
+         <div className='heads'><span>A:</span>{this.props.a}</div>
+       <button className='btn' onClick={()=>{this.props.onUpdateA(this.props.b)}}>update A</button>
+       </div>
+          <div className="col">
+         <div className='heads'><span>B:</span>{this.props.b}</div>
+       <button className='btn' onClick={()=>{this.props.onUpdateB(this.props.a)}}>update B</button>
+       </div>
     </div>
   );
 }
+}
 
-export default App;
+const mapStateToProps =(state)=>{
+  return{
+    a:state.rA.a,
+    b:state.rB.b
+  }
+}
+
+const mapDispatchToProps = (dispatch)=>{
+  return{
+    onUpdateA:(b)=>dispatch({type:"UPDATE_A",value:b}),
+    onUpdateB:(a)=>dispatch({type:"UPDATE_B", value:a})
+  }
+}
+export default connect(mapStateToProps,mapDispatchToProps) (App);
